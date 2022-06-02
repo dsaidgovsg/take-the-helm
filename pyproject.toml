@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "take-the-helm"
+version = "0.1.0"
+description = ""
+authors = ["Charlton Lim <cadmusthefounder@gmail.com>"]
+readme = "README.md"
+packages = [{include = "take_the_helm"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fastapi = "^0.78.0"
+uvicorn = {extras = ["standard"], version = "^0.17.6"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
