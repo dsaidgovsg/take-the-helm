@@ -29,11 +29,11 @@ spec:
         - name: take-the-helm
           securityContext:
             {}
-          image: "dsaidgovsg/lnd:take-the-helm-0.1.0"
+          image: "cadmusthefounder/lnd:take-the-helm-0.1.0"
           imagePullPolicy: IfNotPresent
           ports:
             - name: http
-              containerPort: 80
+              containerPort: 8000
               protocol: TCP
           livenessProbe:
             httpGet:
