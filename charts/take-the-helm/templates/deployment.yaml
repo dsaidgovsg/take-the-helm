@@ -30,11 +30,11 @@ spec:
             - name: http
               containerPort: {{ .Values.service.port }}
               protocol: TCP
-          # livenessProbe:
-          #   httpGet:
-          #     path: /hello
-          #     port: {{ .Values.service.port }}
-          # readinessProbe:
-          #   httpGet:
-          #     path: /hello
-          #     port: {{ .Values.service.port }}
+          livenessProbe:
+            httpGet:
+              path: /hello
+              port: {{ .Values.service.port }}
+          readinessProbe:
+            httpGet:
+              path: /hello
+              port: {{ .Values.service.port }}
