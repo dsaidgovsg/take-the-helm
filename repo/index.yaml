@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  take-the-helm:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2022-06-03T10:44:01.82398+08:00"
+    description: A Helm chart for Kubernetes
+    digest: 531939b9462294446e8927be44c4e3f5dd922893d123062a673f8fc7c5b2f168
+    name: take-the-helm
+    type: application
+    urls:
+    - take-the-helm-0.1.0.tgz
+    version: 0.1.0
+generated: "2022-06-03T10:44:01.823166+08:00"
