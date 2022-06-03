@@ -43,9 +43,7 @@ RUN pip3 install "poetry==$POETRY_VERSION" \
     && python3 -m venv $VENV_PATH
 
 COPY poetry.lock pyproject.toml ./
-RUN --mount=type=cache,target=/home/.cache/pypoetry/cache \
-    --mount=type=cache,target=/home/.cache/pypoetry/artifacts \
-    . $VENV_PATH/bin/activate && poetry install --no-root --with $DEPENDENCY_GROUPS
+RUN . $VENV_PATH/bin/activate && poetry install --no-root --with $DEPENDENCY_GROUPS
 
 #######################
 # Runtime Image
