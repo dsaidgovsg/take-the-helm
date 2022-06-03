@@ -25,7 +25,10 @@ helm install app charts/take-the-helm -n custom --create-namespace
 ```
 4. Check deployments
 ```bash
-
+kubectl get services --all-namespaces
+kubectl get deployments --all-namespaces
+kubectl get pods --all-namespaces
+kubectl describe pods <pod-name> -n custom
 ```
 5. Uninstall helm chart
 ```bash
