@@ -16,14 +16,18 @@ minikube start
 ```
 2. Check if cluster is ready
 ```bash
-kubectl get po -A
+kubectl get pods -A
 ```
 3. Install helm chart
 ```bash
 helm install app charts/take-the-helm -n custom --create-namespace --dry-run
 helm install app charts/take-the-helm -n custom --create-namespace
 ```
-4. Uninstall helm chart
+4. Check deployments
+```bash
+
+```
+5. Uninstall helm chart
 ```bash
 helm uninstall app -n custom
 ```
